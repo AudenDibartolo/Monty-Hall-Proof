@@ -16,7 +16,7 @@ def switch():
         if doors[firstChoice] != 'prize':
             numWin += 1
     
-    return round(numWin/tries, 2)
+    print(round(numWin/tries, 2) * 100)
         
 def stay():
     tries = 0
@@ -33,8 +33,7 @@ def stay():
         if doors[firstChoice] == 'prize':
             numWin += 1
     
-    return round(numWin/tries, 2)
-        
+    print(round(numWin/tries, 2) * 100)
 
-    
-print(stay() * 100)
+
+stay()
